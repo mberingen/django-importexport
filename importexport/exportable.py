@@ -3,7 +3,7 @@ import itertools
 def export_all(exports):
 	return list(itertools.chain(*[obj.export() for obj in exports]))
 
-class Exportable():
+class Exportable(object):
     def export_content(self):
     	"""
     	DEPRECATED: use export_after instead
